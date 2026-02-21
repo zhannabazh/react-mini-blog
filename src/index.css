@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  background-image: url("/bckgrnd.jpg");
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-form {
+  background-color: #ebc2d5;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 400px;
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.posts-empty {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 12px 16px;
+  color: #900045;
+  background-color: #ffffffb3;
+  min-width: 400px;
+}
+
+.post-form button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f286aa;
+  color: #900045;
+  cursor: pointer;
+}
+.post-form button:hover {
+  background-color: #b96883;
+}
+.post-form button:disabled {
+  background-color: #9e697b;
+  cursor: not-allowed;
+  color: #f3efef;
+}
+
+.post-form input::placeholder,
+.post-form textarea::placeholder {
+  color: #900045;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #f286aa;
+  background-color: #fcb2cd9a;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.error {
+  color: rgb(255, 0, 0);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.success {
+  color: rgb(22, 180, 22);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.posts {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 14px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #55303db1;
+  padding: 12px;
+}
+
+.posts h3 {
+  text-align: center;
+  margin-bottom: 12px;
+  color: #e9c1d6;
+  font-size: 22px;
+}
+
+.post-card {
+  width: 100%;
+  background: #5f3a49;
+  padding: 12px;
+  color: #f3efef;
+  border: 1px solid #f286aa;
+  box-sizing: border-box;
+}
+
+.post-card p {
+  margin: 0;
+  color: #f3efef;
+  font-size: 14px;
+  line-height: 1.5;
+}
