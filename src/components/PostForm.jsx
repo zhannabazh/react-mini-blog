@@ -41,11 +41,15 @@ function PostForm({ onAddPost }) {
     setSuccess(false);
 
     try {
-      const newPost = await createPost({
+      const createdPost = await createPost({
         title: title.trim(),
         body: body.trim(),
       });
 
+      const newPost = {
+        ...createdPost,
+        id: Math.round(Date.now() + Math.random()),
+      };
       onAddPost(newPost);
 
       setSuccess(true);
